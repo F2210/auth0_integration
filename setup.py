@@ -7,7 +7,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='auth0_integration',
-    version='1.0.4',
+    version='1.0.5',
     packages=find_packages(),
     license='MIT',
     include_package_data=True,
@@ -20,7 +20,6 @@ setup(
     install_requires=[
         'Django>=3.2', 'python-jose', 'sentry_sdk'
     ],
-    packages=["auth0_integration"]
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
