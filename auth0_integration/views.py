@@ -3,7 +3,6 @@ import json
 import sentry_sdk, random, string
 from django.contrib.auth import get_user_model, login
 from django.shortcuts import redirect, HttpResponse
-from ledenmanager.settings import *
 from jose import jwt
 
 User = get_user_model()
