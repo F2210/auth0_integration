@@ -1,12 +1,13 @@
-import json
-
+import json, os
 import sentry_sdk, random, string
 from django.contrib.auth import get_user_model, login
 from django.shortcuts import redirect, HttpResponse
-from ledenmanager.settings import *
 from jose import jwt
 
 User = get_user_model()
+
+JWT_AUTHKEY = os.getenv('JWT_AUTHKEY')
+JWT_ENCKEY = os.getenv('JWT_ENCKEY')
 
 def randomstring(length=100):
 
