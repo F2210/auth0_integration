@@ -8,6 +8,18 @@ User = get_user_model()
 
 JWT_AUTHKEY = os.getenv('JWT_AUTHKEY')
 JWT_ENCKEY = os.getenv('JWT_ENCKEY')
+SENTRY_ENV = os.getenv('SENTRY_ENV')
+SENTRY_KEY = os.getenv('SENTRY_KEY')
+
+sentry_sdk.init(
+    SENTRY_ENV,
+
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    # We recommend adjusting this value in production.
+    traces_sample_rate=1.0,
+    environment="scripts"
+    )
 
 def randomstring(length=100):
 
