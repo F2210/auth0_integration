@@ -8,7 +8,7 @@ setup(
     author="Jacco Broeren",
     author_email="jaccobroeren@freedom.nl",
     url="https://github.com/F2210/auth0_integration",
-    version="1.0.1",
+    version="1.0.2",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",

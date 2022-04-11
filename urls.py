@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from auth0_integration.views import *
+from views import *
 urlpatterns = [
     path('auth0/autologin/', auth0Login),
     path('auth0/users', auth0users)
