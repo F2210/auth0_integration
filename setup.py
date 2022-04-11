@@ -2,19 +2,12 @@ import re
 import os
 from setuptools import setup, find_packages
 
-with open('auth0_integration/__init__.py', 'r') as init_file:
-    version = re.search(
-        '^__version__ = [\'"]([^\'"]+)[\'"]',
-        init_file.read(),
-        re.MULTILINE,
-    ).group(1)
-
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='auth0-integration',
-    version=version,
+    version='1.0.4',
     packages=find_packages(),
     license='MIT',
     include_package_data=True,
