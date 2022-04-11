@@ -20,7 +20,6 @@ def randomstring(length=100):
 
     return res
 
-
 def auth0Login(request):
     sentry_sdk.capture_message("jwt token found")
 
