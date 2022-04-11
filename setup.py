@@ -29,7 +29,6 @@ setup(
     ],
     python_requires=">=3.7",
     install_requires=["django>=4.0", "python-jose", "sentry_sdk"],
-    setup_requires=["setuptools_scm"],
     zip_safe=False,
     include_package_data=True,
 )
