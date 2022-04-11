@@ -20,6 +20,7 @@ setup(
     install_requires=[
         'Django>=3.2', 'python-jose', 'sentry_sdk'
     ],
+    packages=["auth0_integration"]
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
