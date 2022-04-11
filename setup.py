@@ -2,8 +2,7 @@ import re
 import os
 from setuptools import setup, find_packages
 
-
-with open('encrypted_model_fields/__init__.py', 'r') as init_file:
+with open('auth0_integration/__init__.py', 'r') as init_file:
     version = re.search(
         '^__version__ = [\'"]([^\'"]+)[\'"]',
         init_file.read(),
