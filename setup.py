@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='auth0-integration',
+    name='auth0_integration',
     version='1.0.4',
     packages=find_packages(),
     license='MIT',
